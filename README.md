@@ -9,9 +9,7 @@ b) The term random seed is a way to start a seemingly random process, so even th
 c) The code was rerun below the original two graphs with a new plot (plot3), however, this time it was seeded with a particular starting value (550 in my case), and then every time you rerun this code the same movement pathway is produced- therefore reproducible for whoever is running the code. The set. seed function was used.
 
 d) 
-<p align= "center"
-<img src= "https://github.com/Cat13-beep/reproducible-research_homework/blob/main/question-4-code/Question%204%20image.pdf" width"600" height"500" >
-</p>
+<p align= "center" <img src= "https://github.com/Cat13-beep/reproducible-research_homework/blob/main/question-4code/Question%204%20image.pdf" width"600" height"500" > </p>
 
 5a) Imported the data set into posit- the table has 13 Columns and 33 Rows (excluding the headings)
 
