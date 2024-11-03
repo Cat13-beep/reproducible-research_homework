@@ -12,6 +12,12 @@ d) Not sure how to get the image here yet
 
 5a) Imported the data set into posit- the table has 13 Columns and 33 Rows (excluding the headings)
 
+5b) V=aL^b is the allometric equation, to get to a linear model (Y=mx+c) I applied the log transformation to both sides of the equation and then applied the laws of logarithms to get logV= loga+blogL. I applied this transformation to both the genomic length of viral volume in posit when performing the regression analysis.
+
+5c) From the results of the linear regression, performed on the cleaned up data, 
+
+
+
 
 ## Instructions
 
