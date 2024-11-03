@@ -20,8 +20,8 @@ My values are, however, identical to the number of significant figures the table
 5d) Code to produce the figure shown here as well as in a separate folder from posit. I used ggplot, with my cleaned virus data. I put the explanatory variable on the x-axis (the genome length) and the response variable on the y-axis (the virion volume), I also changed the axis names to match what was given in the figure that I am trying to copy and finally I added a line of best fit with the confidence intervals shown as a shaded region around the line. The code is also here- library(ggplot2). ggplot(Virus_clean, 
  aes(x = log(genome_length_kb), y = log(virion_volume_nm_nm_nm))) + geom_point() + xlab("log[Genome length (kb)]") + ylab("log[Virion volume (nm³)]") + theme_minimal() +
  geom_smooth(method=lm, se=TRUE).Using this code produced an image that looked like the one in the question.
-
-5) I can use the predicted values of alpha and beta from my answer to 5c to predict the volume of a virion with a genomic size of 300kb, my results however were for all the viruses and this one specifically is a double-stranded DNA virus, (as the research article demonstrates there are slight differences between different types of virus. Despite this, as discussed above my values are the same as that of the double-stranded DNA values in the table so I can be confident in my estimate with my values can be calculated using the equation V=aL^b which is 1181.807 * 300^1.5152= a volume of 6.697*10^6 nm^3.
+ 
+5e) I can use the predicted values of alpha and beta from my answer to 5c to predict the volume of a virion with a genomic size of 300kb, my results however were for all the viruses and this one specifically is a double-stranded DNA virus, (as the research article demonstrates there are slight differences between different types of virus. Despite this, as discussed above my values are the same as that of the double-stranded DNA values in the table so I can be confident in my estimate with my values can be calculated using the equation V=aL^b which is 1181.807 * 300^1.5152= a volume of 6.697*10^6 nm^3.
 
 
 ## Instructions
