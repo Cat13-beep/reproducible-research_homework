@@ -1,8 +1,11 @@
+#installing the correct packages
 #install.packages("ggplot2")
 #install.packages("gridExtra")
 
 library(ggplot2)
 library(gridExtra)
+
+#creating the random movement function
 
 random_walk  <- function (n_steps) {
   
@@ -28,6 +31,8 @@ random_walk  <- function (n_steps) {
   
 }
 
+#running the random movement function with 500 time points
+
 data1 <- random_walk(500)
 
 plot1 <- ggplot(aes(x = x, y = y), data = data1) +
@@ -39,6 +44,8 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   xlab("x-coordinate") +
   
   ylab("y-coordinate")
+
+#Running the script again with 500 time points (can compare these two graphs)
 
 data2 <- random_walk(500)
 
@@ -52,4 +59,31 @@ plot2 <- ggplot(aes(x = x, y = y), data = data2) +
   
   ylab("y-coordinate")
 
+#Displaying these two graphs side by side
+
 grid.arrange(plot1, plot2, ncol=2)
+
+#the two random walks are different from one another, over time they move in a random way and you can see their movements over time. 
+
+#every time you run the code the outcome is slightly different
+
+
+#Edit of the code to make this production of a random movement process (like Brownian movements) reproducible
+#setting the seed at 550 but it can be any random number
+set.seed(550)
+data3 <- random_walk(500)
+
+plot3 <- ggplot(aes(x = x, y = y), data = data3) +
+  
+  geom_path(aes(colour = time)) +
+  
+  theme_bw() +
+  
+  xlab("x-coordinate") +
+  
+  ylab("y-coordinate")
+
+
+(plot3)
+
+#now every time you run this code it will create the same diagram (movement pathway) as it is being seeded by the same starting value
