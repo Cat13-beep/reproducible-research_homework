@@ -10,7 +10,7 @@ c) The code was rerun below the original two graphs with a new plot (plot3), how
 
 d) Not sure how to get the image here yet
 
-5a)
+5a) Imported the data set into posit- the table has 13 Columns and 33 Rows (excluding the headings)
 
 
 ## Instructions
