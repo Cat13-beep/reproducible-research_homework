@@ -10,7 +10,7 @@ c) The code was rerun below the original two graphs with a new plot (plot3), how
 
 d) 
 <p align="center">
-<img src="RAW_IMAGE_URL" width="600" height="500">
+<img src="https://github.com/Cat13-beep/reproducible-research_homework/blob/main/question-4-code/Question%204%20image.pdf" width="600" height="500">
 </p>
 
 5a) Imported the data set into posit- the table has 13 Columns and 33 Rows (excluding the headings)
