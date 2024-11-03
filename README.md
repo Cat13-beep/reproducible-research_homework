@@ -2,11 +2,15 @@
 
 Answers to 1-3 https://github.com/Cat13-beep/logistic_growth
 
-4a) When the two random walks are excecuted it can be seen that they produce two differently shaped graphs, and every time the code is rerun the outcome is different as well (this highlights the random nature of the code). The blue scale bar on the edge of the diagram shows at what time the random walk is in different locations, with the dark blue being the oldest locations, and as it turns lighter blue it becomes more recent- this allows the journey of the random walk over time to be assessed). At every time interval, the code put in 500 total, the movement will move 0.25 in a certain direction that is determined to be at a random angle by the code. That is why there is many points and changes in direction in the diagrams, as every new movement will be in a new random direction.
+4a) When the two random walks are executed it can be seen that they produce two differently shaped graphs, and every time the code is rerun the outcome is different as well (this highlights the random nature of the code). The blue scale bar on the edge of the diagram shows at what time the random walk is in different locations, with the dark blue being the oldest locations, and as it turns lighter blue it becomes more recent- this allows the journey of the random walk over time to be assessed). At every time interval, the code puts in 500 total, the movement will move 0.25 in a certain direction that is determined to be at a random angle by the code. That is why there are many points and changes in direction in the diagrams, as every new movement will be in a new random direction.
 
 b) The term random seed is a way to start a seemingly random process, so even though a random process is being displayed it can still be reproducible, in the way the outcomes to the code in question 4a were not reproducible as a different random walk is produced with each run of the code. The random seed will be set and therefore the code will start from the same place and lead to the same result each time that it is run.
 
-c) The code was rerun below the original two graphs with a new plot (plot3), however this time it was seeded with a particular starting value (550 in my case) and then every time you rerun this code the same movement pathway is produced- therefore reproducible for whoever is running the code. The set.seed function was used.
+c) The code was rerun below the original two graphs with a new plot (plot3), however, this time it was seeded with a particular starting value (550 in my case), and then every time you rerun this code the same movement pathway is produced- therefore reproducible for whoever is running the code. The set. seed function was used.
+
+d) Not sure how to get the image here yet
+
+5a)
 
 
 ## Instructions
