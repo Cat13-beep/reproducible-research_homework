@@ -87,3 +87,4 @@ plot3 <- ggplot(aes(x = x, y = y), data = data3) +
 (plot3)
 
 #now every time you run this code it will create the same diagram (movement pathway) as it is being seeded by the same starting value
+
