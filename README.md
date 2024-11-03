@@ -14,7 +14,7 @@ d) Not sure how to get the image here yet
 
 5b) V=aL^b is the allometric equation, to get to a linear model (Y=mx+c) I applied the log transformation to both sides of the equation and then applied the laws of logarithms to get logV= loga+blogL. I applied this transformation to both the genomic length of viral volume in posit when performing the regression analysis.
 
-5c) From the results of the linear regression, performed on the cleaned up data, 
+5c) From the results of the linear regression, performed on the cleaned-up data and logged data. The logged linear model from the allometric equation shows that loga is going to be the intercept in the equation and in this case, it was 7.0748, therefore to get just alpha we need to get rid of the log by using the exponent- this gives alpha as 1.19*10^7 (3.s.f) and beta in the logged linear equation I displayed in 5b is the gradient which, from the output of the linear regression, is 1.52 (3.s.f), they are both statistically significant. The p-value for the alpha value (scaling factor) is 2.28e^-10 and the beta value (exponent) is 6.44e-10. Comparing this to what was in the article's table two that this question is based on- 
 
 
 
