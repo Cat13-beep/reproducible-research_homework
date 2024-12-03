@@ -70,6 +70,7 @@ grid.arrange(plot1, plot2, ncol=2)
 
 #Edit of the code to make this production of a random movement process (like Brownian movements) reproducible
 #setting the seed at 550 but it can be any random number
+
 set.seed(550)
 data3 <- random_walk(500)
 
@@ -87,3 +88,9 @@ plot3 <- ggplot(aes(x = x, y = y), data = data3) +
 (plot3)
 
 #now every time you run this code it will create the same diagram (movement pathway) as it is being seeded by the same starting value
+
+#saving the packages used for this analysis
+
+sink(file = "package-versions.txt")
+sessionInfo()
+sink()
