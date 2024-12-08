@@ -11,7 +11,7 @@ Answers to 1-3 https://github.com/Cat13-beep/logistic_growth
 **d)** In the commit history the latest commit showed differences between all the code I wrote because I repeated below the original code so as not to lose the first part of this question's code. Therefore, the specific addition I added cannot be located however it is the addition of the set.seed at the start of the code. I also changed the name of the plot and data (to 3) to distinguish them from plot/data 1 and 2 from the first part of the question. 
 
 <p align="center">
-<img src="https://github.com/Cat13-beep/reproducible-research_homework/blob/main/question-4-code/Question%204%20image.png" width="550" height="400">
+<img src="https://github.com/Cat13-beep/reproducible-research_homework/blob/main/question-4-code/Question%204%20image.png" width="650" height="400">
 </p>
 
 **5a)** I imported the data set into posit from the repo file Cui_etal2014.csv, from the question 5 folder. I found From exploring the data that the table has 13 Columns and 33 Rows (excluding the headings). 
