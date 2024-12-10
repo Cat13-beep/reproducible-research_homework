@@ -19,7 +19,7 @@ Brownian motion is the random movement of gas and liquid particles. It can be mo
 In the commit history, the latest commit shows the introduction of the set-seed function to make the output of the random motion more reproducible. I have also performed changes to the number of time intervals, increasing this, and the step size of movement at each time interval, I decreased this. Both these changes made a smoother graph that resembles the continuous movement of Brownian motion better than the previous random-movement code. It is not completely continuous however, this and taking the movement directions from a certain normal distribution could have made it even more like Brownian motion.
 
 <p align="center">
-<img src="https://github.com/Cat13-beep/reproducible-research_homework/blob/main/question-4-code/Question4image.jpg" width="650" height="400">
+<img src="https://github.com/Cat13-beep/reproducible-research_homework/blob/main/question-4-code/q4image.jpg" width="650" height="400">
 </p>
 
 # Question 5
