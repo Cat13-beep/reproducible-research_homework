@@ -97,7 +97,6 @@ random_walk2  <- function (n_steps) {
 }
 
 
-set.seed(250)
 
 data3 <- random_walk2(1550)
 
