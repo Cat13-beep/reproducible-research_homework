@@ -1,7 +1,6 @@
 #load packages needed for question
 library(ggplot2)
 library(tidyverse)
-library(palmerpenguins)
 library(here)
 library(janitor)
 
