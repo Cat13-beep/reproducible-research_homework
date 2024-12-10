@@ -21,6 +21,7 @@ The term random seed is a way to start a seemingly random process, so even thoug
 Brownian motion is the random movement of gas and liquid particles. It can be modeled with the code for the random walk, to show the random movements of the particles in space (3). The Wiener process which is used to simulate Brownian motion has some differences however, for example, random-walk code has movement in certain discrete time intervals however brownian motion is usually modeled using the Weiner process which has continuous motion that causes scale invariance (the diagram does not change shape if the scale is changed). Therefore code was rerun below the original two graphs labeling it as a new plot (plot3), however, this time it was seeded with a particular starting value (250 in my case), and then every time you rerun this code the same movement pathway is produced- therefore reproducible as whoever is running the code will see the same graph. The set.seed() function was used.  In addition to changing reproducibility, I tried to make it more like the Wiener process which is continuous, graph smoother by decreasing step size. There are other key points of the Wiener process however that could have also been incorporated to make it more realistic, for example, movement increments being made independent and drawn from a normal distribution (3). I committed my changes to the code and now it is in my repo in the question-4-code folder Random_walk.R.
 
 **4d)**
+**Adding the Commit Comparison to README.md**
 
 In the commit history, the latest commit shows the introduction of the set-seed function to make the output of the random motion more reproducible. I have also performed changes to the number of time intervals, increasing this, and the step size of movement at each time interval, I decreased this. Both these changes made a smoother graph that resembles the continuous movement of Brownian motion better than the previous random-movement code. It is not completely continuous however, this and taking the movement directions from a certain normal distribution could have made it even more like Brownian motion.
 
@@ -32,22 +33,29 @@ In the commit history, the latest commit shows the introduction of the set-seed 
 **Exploring the Relationship Between Viral Volume and Genome Length**
 
 **5a)**
+**Adding Data into R and Exploring Data**
 
 I imported the data set into posit from the repo file Cui_etal2014.csv, from the question 5 folder. I found by exploring the data that the table has 13 Columns and 33 Rows (excluding the headings). 
 
 **5b)**
+**Transforming Data to Make Linear**
 
 V=aL^b is the allometric equation. To get to a linear model (Y=mx+c) I applied the log transformation to both sides of the equation and then applied the laws of logarithms to get logV= loga+blogL. I applied this transformation to both the genomic length of viral volume in posit when performing the regression analysis, code can be found in the folder in my repo.
 
 **5c)**
+**Exploring Linear Model to get Constant Values for the Allometric Equation**
 
 From the results of the linear regression, performed on the cleaned-up data and logged data. The logged linear model from the allometric equation shows that loga is going to be the intercept in the equation and in this case, it was 7.0748, therefore to get just alpha we need to get rid of the log by using the exponent (e)- this gives alpha as 1181.807 (3.s.f) and beta in the logged linear equation I displayed in 5b is the gradient which, from the output of the linear regression, is 1.5152, they are both statistically significant. The p-value for the alpha value is 2.28e^-10 and the beta value's P-value is 6.44e-10. Comparing this to what was in article (3) table two- for double-stranded DNA viruses (which is the kind of viruses in the dataset I used in my analyses) the Allometric exponent 95% CI is 1.16-1.87 with an average of 1.52, which is what I predicted beta value is when rounded to (2.d.p) Additionally, the predicted value for the Scaling factor from the table is 1,182 with a CI of (246 to 5,675), again when rounding my alpha value to this number of significant figures gives the same value as the paper. Therefore, both my predicted alpha and beta values match what was expected in the research paper that gave the data that I have been analyzing in this question. Despite my values matching what was in the table, the confidence interval is quite large, especially for the scaling factor, and therefore will likely depend on the individual double-stranded viral molecule being looked at.
 
 **5d)** 
+**Production of Graph Comparing Genome Size and Viral Volume**
 
-Code to produce the figure shown here as well as in a separate folder (in the question 5 data folder, called question 5 code). I used ggplot, with my cleaned virus data. I put the explanatory variable on the x-axis (the genome length) and the response variable on the y-axis (the virion volume), I also changed the axis names to match what was given in the figure that I am trying to copy and finally I added a line of best fit with the confidence intervals shown as a shaded region around the line. The code is also here- ggplot(Virus_clean, aes(x = log(genome_length_kb), y = log(virion_volume_nm_nm_nm))) + geom_point() + xlab("log[Genome length (kb)]") + ylab("log[Virion volume (nm³)]") + theme_minimal() + geom_smooth(method=lm, se=TRUE). Using this code produced an image that looked exactly like the one in the question.
+Code to produce the figure shown here as well as in a separate folder (in the question 5 data folder, called question 5 code). I used ggplot, with my cleaned virus data. I put the explanatory variable on the x-axis (the genome length) and the response variable on the y-axis (the virion volume), I also changed the axis names to match what was given in the figure that I am trying to copy and finally I added a line of best fit with the confidence intervals shown as a shaded region around the line.
+The code is also here: ggplot(Virus_clean, aes(x = log(genome_length_kb), y = log(virion_volume_nm_nm_nm))) + geom_point() + xlab("log[Genome length (kb)]") + ylab("log[Virion volume (nm³)]") + theme_minimal() + geom_smooth(method=lm, se=TRUE). <ins>Using this code produced an image that looked exactly like the one in the question.</ins>
  
 **5e)**
+**Using the Allometric Equation to Estimate Viral Volume From Genome Length**
+
 I can use the predicted values of alpha and beta from my answer to 5c to predict the volume of a virion with a genomic size of 300kb for a double-stranded DNA virus. As discussed above my values are the same as that of the double-stranded DNA values in the table so I can be confident in my estimated answer with my values for alpha and beta- input into the equation V=aL^b (in question it states L is nucleotides so which suggest having to multiple 300 by 1000 however in the dataset and graph kb are used so that is what I will put into my equation here) which is 1181.807 x 300^1.5152= a viral volume of 6.697x10^6 nm^3.
 
 **References:**
