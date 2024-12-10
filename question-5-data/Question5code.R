@@ -1,4 +1,4 @@
-#downloading packages for question
+#load packages needed for question
 library(ggplot2)
 library(tidyverse)
 library(palmerpenguins)
@@ -7,6 +7,8 @@ library(janitor)
 
 #Import the data and explore it to find out about columns and rows
 Cui_etal2014 <- read_csv("question-5-data/Cui_etal2014.csv")
+nrow(Cui_etal2014)
+ncol(Cui_etal2014)
 #33 rows and 13 columns
 
 #Need to clean data before performing analysis with it/ gaps in names are a problem
@@ -19,12 +21,12 @@ summary(Virus_clean)
 
 #Transforming the different variables (virus volume and genome length)
 
-logged_volume<-log(Virus_clean$virion_volume_nm_nm_nm)
-logged_genomesize<-log(Virus_clean$genome_length_kb)
+Virus_clean$logged_volume<-log(Virus_clean$virion_volume_nm_nm_nm)
+Virus_clean$logged_genomesize<-log(Virus_clean$genome_length_kb)
 
 #Linear regression with the transformed variables
 
-virusRegression <- lm(log(virion_volume_nm_nm_nm) ~ log(genome_length_kb), data= Virus_clean)
+virusRegression <- lm(logged_volume ~ logged_genomesize, data= Virus_clean)
 summary(virusRegression)
  
 
