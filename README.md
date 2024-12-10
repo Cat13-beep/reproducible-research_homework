@@ -3,6 +3,8 @@
 **Question 1-3)** Answers to questions 1-3 https://github.com/Cat13-beep/logistic_growth
 
 # Question 4
+**Modelling Reproducible Random Processes**
+
 **4a)**
 **Observations Regarding Code That Produces Two Random Walks**
 When the two random walk codes are executed it can be seen that they produce two differently shaped graphs, and every time the code is rerun the outcome is different as well (this highlights the random nature of the code), this limits the reproducibility of as every new person running the code will be looking at slightly different graphs. The blue scale bar on the side of the diagram shows at what time the random walk is in different locations, with the dark blue being the oldest locations, and as it turns lighter blue it becomes more recent- this allows the journey of the random walk over time to be assessed). For example, in my plot 1 (the first time I ran the code), the movement started at (0,0) coordinate along the X and Y-axis and then moved downwards and to the left, before moving upwards and further to the left to end at roughly location (-5,2). Contrastingly, my plot two has a very different movement pattern- starting at (0,0.5) and going through multiple different directions of movement before ending up at (-3,-2.5). At every time interval, there are 500 different time intervals used in total, the movement will be 0.25 distance in a certain direction that is determined at a random angle. That is why there are many points and changes in direction in the diagrams, as almost every new movement will be in a new random direction.
@@ -23,6 +25,8 @@ In the commit history, the latest commit shows the introduction of the set-seed 
 </p>
 
 # Question 5
+**Exploring the Relationship Between Viral Volume and Genome Length**
+
 **5a)**
 I imported the data set into posit from the repo file Cui_etal2014.csv, from the question 5 folder. I found by exploring the data that the table has 13 Columns and 33 Rows (excluding the headings). 
 
