@@ -28,6 +28,8 @@ Answers to 1-3 https://github.com/Cat13-beep/logistic_growth
 1) https://stackoverflow.com/questions/22639587/what-does-random-seed-do-in-python
 2) https://www.baeldung.com/java-random-seed
 3) Cui, Schlub, and Holmes published an article in the *Journal of Virology* (doi: https://doi.org/10.1128/jvi.00362-14)
+4) Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. R for data science. " O'Reilly Media, Inc.", 2023.
+5) I used coding files from previous labs (for example when cleaning the data I used cleaning code pipelines learnt in reproducible figures practical)
 
 ## Instructions
 
