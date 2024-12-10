@@ -24,7 +24,7 @@ In the commit history, the latest commit shows the introduction of the set-seed 
 
 # Question 5
 **5a)**
-I imported the data set into posit from the repo file Cui_etal2014.csv, from the question 5 folder. I found From exploring the data that the table has 13 Columns and 33 Rows (excluding the headings). 
+I imported the data set into posit from the repo file Cui_etal2014.csv, from the question 5 folder. I found by exploring the data that the table has 13 Columns and 33 Rows (excluding the headings). 
 
 **5b)**
 V=aL^b is the allometric equation. To get to a linear model (Y=mx+c) I applied the log transformation to both sides of the equation and then applied the laws of logarithms to get logV= loga+blogL. I applied this transformation to both the genomic length of viral volume in posit when performing the regression analysis, code can be found in the folder in my repo.
