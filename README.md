@@ -62,7 +62,9 @@ aes(x = log(genome_length_kb), y = log(virion_volume_nm_nm_nm))) + geom_point() 
 
 xlab("log[Genome length (kb)]") + ylab("log[Virion volume (nm³)]") + 
 
-theme_minimal() + geom_smooth(method=lm, se=TRUE).
+theme_minimal() + 
+
+geom_smooth(method=lm, se=TRUE).
 
 <ins>Using this code produced an image that looked like the one in the question.</ins>
  
