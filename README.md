@@ -55,9 +55,13 @@ From the results of the linear regression, performed on the cleaned-up and logge
 Code to produce the figure shown here as well as in a separate folder (in the question 5 data folder, called question 5 code). I used ggplot, with my cleaned virus data. I put the explanatory variable on the x-axis (the genome length) and the response variable on the y-axis (the virion volume), I also changed the axis names to match what was given in the figure that I am trying to copy and finally I added a line of best fit with the confidence intervals shown as a shaded region around the line.
 
 The code is also here: 
+
 ggplot(Virus_clean,
+
 aes(x = log(genome_length_kb), y = log(virion_volume_nm_nm_nm))) + geom_point() +
+
 xlab("log[Genome length (kb)]") + ylab("log[Virion volume (nm³)]") + 
+
 theme_minimal() + geom_smooth(method=lm, se=TRUE).
 
 <ins>Using this code produced an image that looked like the one in the question.</ins>
