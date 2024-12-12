@@ -72,34 +72,9 @@ grid.arrange(plot1, plot2, ncol=2)
 #Edit of the code to make this production of a random movement process (like Brownian movements) reproducible
 #setting the seed at 250 but this is just an example (it can be any number)
 
-random_walk2  <- function (n_steps) {
-  
-  df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
-  
-  df[1,] <- c(0,0,1)
-  
-  for (i in 2:n_steps) {
-    
-    h <- 0.01
-    
-    angle <- runif(1, min = 0, max = 2*pi)
-    
-    df[i,1] <- df[i-1,1] + cos(angle)*h
-    
-    df[i,2] <- df[i-1,2] + sin(angle)*h
-    
-    df[i,3] <- i
-    
-  }
-  
-  return(df)
-  
-}
-
-
 set.seed(250)
 
-data3 <- random_walk2(1550)
+data3 <- random_walk(8000)
 
 plot3 <- ggplot(aes(x = x, y = y), data = data3) +
   
